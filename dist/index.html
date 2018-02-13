@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/orange_test.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./Css/Orange.css" />
+    <title>Document</title>
+</head>
+<body class="pg  ">
+    <!--
+    <button type="reset" onclick="displayModel()">Welcome</button>
+    <div id="container" class="content-model">
+
+
+   
+    <div id="Model"  class="model success">
+       <div  class="model-title info">
+           <span class="model-off-icon" onclick="OffModel()">&#9932;</span>
+             title
+       </div>
+       Message cant Work Now Check from Data end of this <br>
+       Message <br>
+       Message <br>
+       Message <br>
+       Message <br>
+       
+    </div>
+
+</div>-->
+
+</body>
+    <script>
+        /*
+        var arr = window.root;
+        arr.prototype.setData([2, 3, 4 ]);
+        alert(arr.prototype.getData());
+        */
+       window.Orange.prototype.createModel();
+       window.Orange.prototype.viewData();
+        var content = document.getElementById('container');
+        var model = document.getElementById('Model');
+        
+        //content.style.display = "none";
+
+        
+
+        function  displayModel(){
+            content.style.display = 'block';
+          
+        }
+
+        function  OffModel(){
+            content.style.display = 'none';
+        }
+     
+    </script>
+</html>
