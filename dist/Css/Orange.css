@@ -43,7 +43,7 @@
     line-height: 1.5;
     display: block ;
 }
-
+/*
 .danager {
 
 }
@@ -55,7 +55,7 @@
 .popupModel{
     
 }
-
+*/
 /** Model Content  css */
 .content-model {
     width:100%;
@@ -96,7 +96,7 @@
     padding: 0px 4px;
     font-size:18px;
     pointer-events: visibleFill;
-    -webkit-user-select: none;
+    user-select: none;
     cursor:pointer;
 }
 .model-off-icon:hover{
