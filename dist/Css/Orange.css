@@ -63,7 +63,9 @@
     display:block;
     background-color:rgba( 110,110, 110, 0.5);
     position:fixed;top:0px;
-     left:0px;z-index:1001
+    left:0px;
+    z-index:1001;
+   
 }
 
 .model {
