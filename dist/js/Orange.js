@@ -35,3 +35,5 @@
 var Orange = window.Orange;
 
 var O = window.Orange;
+
+/**this library will content text, div, button, model , responsive , navbar */

@@ -1,6 +1,6 @@
 (function(window){
     var Orange = function (){
-      document.createElement('button');
+    
     };
 
     Orange.prototype ={

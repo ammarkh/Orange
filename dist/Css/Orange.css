@@ -107,7 +107,30 @@
     user-select: none;
     cursor:pointer;
 }
+
 .model-off-icon:hover{
    color:white;
    background: red;
+}
+
+.tp{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tp .tp-text{
+    visibility: hidden;
+    border: 1px solid gray;
+    padding:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*color:white;
+    background-color: rgba(0, 0, 0, 0.7);*/
+    border-radius: 4PX;
+    position: absolute;
+    z-index: 1;
+}
+
+.tp:hover .tp-text {
+    visibility: visible;
 }

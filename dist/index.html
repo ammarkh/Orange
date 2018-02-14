@@ -11,8 +11,12 @@
 </head>
 <body class="pg  ">
   
-    <button type="reset" onclick="closeModel()">Welcome</button>
+  <button type="reset" onclick="set(ev)" ></button>
+
+    <div class="tp">Text , 1 is ready  <span class="tp-text success">tooltip text</span> </label>
+    
       <!--
+            <button type="reset" onclick="closeModel()">Welcome</button>
     <div id="container" class="content-model">
 
 
@@ -64,11 +68,18 @@
         }
   */   
 
+        /*test model *//*
        Orange.Model('Start', 'Application');
 
        function closeModel(){
            
            Orange.popup();
+       }
+
+       */
+
+       function set(ev){
+           console.log(ev);
        }
     </script>
 </html>
