@@ -1,3 +1,5 @@
+
+/*
 (function (window){
     var root = function (){
         this.root = null;
@@ -27,3 +29,9 @@
     window.root = root;
     return root;
 })(window);
+
+*/
+
+var Orange = window.Orange;
+
+var O = window.Orange;

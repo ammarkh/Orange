@@ -18,7 +18,7 @@
                 modelTitle.appendChild(modelOffCtrl);
                 
                 if(title){
-                modelTitle.setAttribute('class','model-title info');
+                modelTitle.setAttribute('class','model-title ');
                 var modelTitleText = document.createElement('label');
                 modelTitleText.innerText = title;       //check type of title 
                 modelTitle.appendChild(modelTitleText);
@@ -26,7 +26,7 @@
 
               
                 var model = document.createElement('div');
-                model.setAttribute('class','model success');
+                model.setAttribute('class','model');
                 model.appendChild(modelTitle);
 
                 if(message){
