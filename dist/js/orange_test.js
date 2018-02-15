@@ -1,3 +1,8 @@
+/**
+ * this Module content a Orange Element for Client.... 
+ */
+
+
 (function(window){
     var Orange = function (){
     

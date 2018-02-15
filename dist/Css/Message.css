@@ -1,0 +1,88 @@
+/** this file will content Message Css Classes */
+
+
+.msg{
+    padding:16px 25px;
+    display: inline-block;
+    border:1px solid lightgray;
+    border-radius:4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+/*
+.msg::after{
+    content:'\00d7';
+    font-size: 28px;
+    font-style: bold;
+    float: right;
+    position: absolute;
+    top:4px;
+    right: 4px;
+    padding-left:8px;
+    padding-right: 2px;
+    cursor: pointer;
+}
+*/
+
+
+
+
+
+
+.msg-danger{
+    background-color: rgb(202, 55, 55);
+    color:white;
+    user-select: none;
+}
+
+.msg-navy {
+    background-color: rgb(33, 144, 235);
+    color:white;
+    user-select: none;
+}
+
+.msg-success{
+    background-color: rgb(22, 187, 58);
+    color:white;
+    user-select: none;
+}
+
+.msg-dark{
+    background-color: rgb(110, 110, 110);
+    color:white;
+    user-select: none;
+}
+
+.msg-gold{
+    background-color: rgba(255, 204, 36, 0.973);
+    color:white;
+    user-select: none;
+}
+
+.msg-nice{
+    background: rgb(68, 177, 172);
+    color:white;
+    user-select: none;
+}
+
+.msg-lg{
+    width:95%;
+    max-width: 95%;
+}
+
+.msg-md{
+    width:60%;
+    max-width: 60%;
+}
+
+.msg-sm{
+    width:35%;
+    max-width: 35%;
+}
