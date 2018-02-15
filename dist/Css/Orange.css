@@ -149,21 +149,7 @@
 
 }
 
-.form-tmp input[type=text]{
-    width:50%;
-    outline: none;
-    border:lightgray 2px solid;
-    padding: 8px 4px;
-    font-size:16px;
-    border-radius: 3px;
-    color:rgb(60, 60, 60);
-}
 
-
-
-.form-tmp input[type=text]:focus{
-   border:gray solid 2px;
-}
 
 .form-tmp .brand{
     font-size: 32px;
@@ -191,6 +177,61 @@
 
 .form-lg{
 
+}
+
+.form-tmp input[type=text]{
+    outline: none;
+    padding: 8px 4px;
+    font-size:16px;
+    border-radius: 3px;
+}
+
+.lg{
+    width:90%;
+}
+
+.md{
+    width: 60%;
+}
+
+.sm{
+    width:35%;
+}
+
+.txt-bx-df:focus{
+   border:gray solid 2px;
+}
+
+.txt-bx-df {
+    border:lightgray 2px solid;
+    color:rgb(60, 60, 60);
+}
+
+.txt-bx-success{
+    border:rgb(50, 204, 61) solid 2px;
+    color:rgb(25, 200, 31);
+}
+
+.txt-bx-success:focus{
+    border:2px solid rgb(47, 162, 57);
+}
+
+.txt-bx-navy{
+    border:2px solid rgb(83, 163, 253);
+    color:rgb(14, 115, 231);
+}
+
+.txt-bx-navy:focus{
+    border:2px solid rgb(19, 94, 179);
+}
+
+.txt-bx-danger{
+    border:2px solid rgb(245, 45, 45);
+    color:rgb(228, 37, 37);
+}
+
+.txt-bx-danger:focus{
+    border:2px solid rgb(218, 47, 47);
 }
 
 /**btn style css */
@@ -253,13 +294,36 @@
 .bn-dark{
     border:1px solid rgb(128, 128, 128);
     color: white;
-    background-color: rgb(79, 79, 79);
+    background-color: rgb(130, 130, 130);
 }
 
 .bn-success {
     border:1px solid rgb(38, 171, 23);
     color:white;
     background-color:rgb(51, 178, 36);
+}
+
+.bn-cold{
+
+}
+
+.bn-pronze{
+
+}
+.bn-silver{
+    
+}
+
+.bn-spdark{
+    background: rgb(41, 45, 50);
+    color:white;
+    border:1px solid rgb(64, 68, 73);
+}
+
+.bn-nice{
+    background:rgb(68, 177, 172);
+    color:white;
+    border:1px solid rgb(78, 196, 190);
 }
 
 .bn-warning{
@@ -270,13 +334,85 @@
 
 .bn-default{
     background: white;
-    color:darkgray;
-    border:1px solid darkgray;
+    color:rgb(110, 110, 110);
+    border:1px solid rgb(110, 110, 110);
 }
 
 .bn:disabled{
     opacity: 0.7;
+    box-shadow: none;
 }
 
+
+.msg{
+    padding:10px 20px;
+    display: inline-block;
+    border:1px solid lightgray;
+    border-radius:4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+}
+
+.msg-danger span{
+    /*border:2px solid white;*/
+    padding:1px 5px;
+    border-radius: 50%;
+    
+    float: right;
+    position:absolute;
+    top:10px;
+    right:10px;
+    
+}
+
+.msg-danger ::after {
+    content: '\00d7';
+    font-size: 22px;
+}
+
+.msg-danger span:hover{
+   /* border:1px solid rgb(202, 55, 55);*/
+    color:rgb(202, 55, 55);
+    background: white;
+}
+
+.msg-danger{
+    background-color: rgb(202, 55, 55);
+    color:white;
+    user-select: none;
+}
+
+.msg-navy {
+    background-color: rgb(33, 144, 235);
+    color:white;
+    user-select: none;
+}
+
+.msg-success{
+    background-color: rgb(22, 187, 58);
+    color:white;
+    user-select: none;
+}
+
+.msg-dark{
+    background-color: rgb(110, 110, 110);
+    color:white;
+    user-select: none;
+}
+
+.msg-gold{
+    background-color: rgba(255, 204, 36, 0.973);
+    color:white;
+    user-select: none;
+}
+
+.msg-nice{
+    background: rgb(68, 177, 172);
+    color:white;
+    user-select: none;
+}
 
 /*table*/
