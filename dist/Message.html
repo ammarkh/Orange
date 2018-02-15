@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./Css/Message.css" />
+    <script src="./js/Orange.js"></script>
+    <script src="./js/Message.js"></script>
     
     <title>Document</title>
 </head>
 <body>
-    <div class="msg msg-danger msg-lg ">
+
+    <button onclick="showmsg1()">show alert</button>
+
+    <div id="msg1" class="msg msg-dark msg-md msg-hidden">
         Welcome to my Message alert page .
         Welcome to my Message alert page .
-    </div>
-    <div class="msg msg-success msg-md">
-        Data Mys Datat dseer
-        sd<br>
-        sd<br>
-        sd
-        
     </div>
 
-    <div class="msg msg-gold msg-sm">desddwqdqdqadddddddddddddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeee
-        sde<br>
-        sde<br>
-        addwdd
-    </div>
+    
+      
+  
+    <script>
+        function showmsg1(){
+            msg.show('msg1');
+        }
+    
+    </script>
 
 </body>
 </html>

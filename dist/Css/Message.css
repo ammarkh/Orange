@@ -14,6 +14,32 @@
     user-select: none;
     overflow: hidden;
     word-wrap: break-word;
+    
+   
+}
+
+.msg-hidden{
+    display: none;
+}
+/* we want make animation alone*/
+.alert{
+    animation-name: msg-Vip ;
+    animation-duration: 0.5s ;
+    animation-timing-function: inherit;
+}
+
+@keyframes msg-Vip {
+    0%  {left:0% ;}to{left:2%;}
+    10% {left:2%;}to{left:0%;}
+    20% {left:0% ;}to{left:2%;}
+    30% {left:2%;}to{left:0%;}
+    40% {left:0% ;}to{left:2%;}
+    50% {left:2%;}to{left:0%;}
+    60% {left:0% ;}to{left:2%;}
+    70% {left:2%;}to{left:0%;}
+    80% {left:0% ;}to{left:2%;}
+    90% {left:2%;}to{left:0%;}
+    100% {left:0% ;}to{left:2%;}
 }
 
 /*

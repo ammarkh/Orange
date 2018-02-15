@@ -36,4 +36,28 @@ var Orange = window.Orange;
 
 var O = window.Orange;
 
-/**this library will content text, div, button, model , responsive , navbar, check box, radio button, socity icon, alertMessage, box, background, validation, chart , form  */
+/**this library will content text, div, button, model , responsive , navbar, check box, radio button, socity icon, alertMessage, box, background, validation, chart , form 
+ * 
+ * table, auto complete , navbar
+ */
+
+ /**
+  * var Orange = (function(){
+
+ function Orange  (message){
+   // constructor  will be orange (message) this is a call
+   
+    
+  
+ }
+
+ Orange .getItem = function (){
+  alert(item);
+ };
+
+ return Orange;
+
+})();
+
+  * 
+  */
