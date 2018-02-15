@@ -184,6 +184,12 @@
     padding: 8px 4px;
     font-size:16px;
     border-radius: 3px;
+   
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    */
 }
 
 .lg{
@@ -205,11 +211,14 @@
 .txt-bx-df {
     border:lightgray 2px solid;
     color:rgb(60, 60, 60);
+    
 }
+
 
 .txt-bx-success{
     border:rgb(50, 204, 61) solid 2px;
     color:rgb(25, 200, 31);
+   
 }
 
 .txt-bx-success:focus{
@@ -416,3 +425,45 @@
 }
 
 /*table*/
+
+
+/**text box*/
+.o-txt-bx-success{
+    border:1px solid rgb(202, 55, 55);
+    position:relative;
+    border-radius: 4px;
+}
+
+.o-txt-bx-success input[type=text]{
+    padding:15px 32px;
+    font-family: Arial;
+    outline: none;
+    width: 85%;
+   font-size: 18px;
+   border:none;
+}
+
+.o-txt-bx-success::after{
+    content:'\00d7';
+    
+    color:rgb(215, 42, 40);
+    
+    font-size: 25px;
+    position: absolute;
+    top:25%;
+    right:2%;
+}
+
+/*position vertical*/
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*Just horizontal (as long as the main flex axis is horizontal which is default)*/
+  
+  #wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  /**/
