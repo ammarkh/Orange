@@ -1,3 +1,6 @@
+/* import library */
+    @import url(Message.css);
+    @import url(Text.css);
 /*Classes for Orange Css */
 
 .Page_Main {
@@ -312,8 +315,10 @@
     background-color:rgb(51, 178, 36);
 }
 
-.bn-cold{
-
+.bn-gold{
+    color: white;
+    background: rgb(255, 237, 61);
+    border:rgb(255, 230,70) 1px solid;
 }
 
 .bn-pronze{
@@ -352,7 +357,8 @@
     box-shadow: none;
 }
 
-
+/***/
+/*
 .msg{
     padding:10px 20px;
     display: inline-block;
@@ -364,9 +370,10 @@
     position: relative;
     text-align: center;
 }
-
+*/
+/*
 .msg-danger span{
-    /*border:2px solid white;*/
+   
     padding:1px 5px;
     border-radius: 50%;
     
@@ -376,14 +383,15 @@
     right:10px;
     
 }
-
+*/
+/*
 .msg-danger ::after {
     content: '\00d7';
     font-size: 22px;
 }
 
 .msg-danger span:hover{
-   /* border:1px solid rgb(202, 55, 55);*/
+  
     color:rgb(202, 55, 55);
     background: white;
 }
@@ -423,6 +431,7 @@
     color:white;
     user-select: none;
 }
+*/
 
 /*table*/
 

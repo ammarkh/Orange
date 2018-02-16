@@ -25,13 +25,13 @@
 .alertH{
     animation-name: msg-alertH ;
     animation-duration: 0.5s ;
-    animation-timing-function: inherit;
+   
 }
 
 .alertV{
     animation-name: msg-alertV ;
     animation-duration: 0.5s ;
-    animation-timing-function: inherit;
+   
 }
 
 
@@ -65,31 +65,31 @@
 }
 
 @-webkit-keyframes msg-alertV{
-    0%  {bottom:0% ;}to{bottom:5%;}
-    10% {bottom:5%;}to{bottom:0%;}
-    20% {bottom:0% ;}to{bottom:5%;}
-    30% {bottom:5%;}to{bottom:0%;}
-    40% {bottom:0% ;}to{bottom:5%;}
-    50% {bottom:5%;}to{bottom:0%;}
-    60% {bottom:0% ;}to{bottom:5%;}
-    70% {bottom:5%;}to{bottom:0%;}
-    80% {bottom:0% ;}to{bottom:5%;}
-    90% {bottom:5%;}to{bottom:0%;}
-    100% {bottom:0% ;}to{bottom:5%;}
+    0%  {top:0% ;}to{top:5%;}
+    10% {top:5%;}to{top:0%;}
+    20% {top:0% ;}to{top:5%;}
+    30% {top:5%;}to{top:0%;}
+    40% {top:0% ;}to{top:5%;}
+    50% {top:5%;}to{top:0%;}
+    60% {top:0% ;}to{top:5%;}
+    70% {top:5%;}to{top:0%;}
+    80% {top:0% ;}to{top:5%;}
+    90% {top:5%;}to{top:0%;}
+    100% {top:0% ;}to{top:5%;}
 }
 
 @keyframes msg-alertV{
-    0%  {bottom:0% ;}to{bottom:5%;}
-    10% {bottom:5%;}to{bottom:0%;}
-    20% {bottom:0% ;}to{bottom:5%;}
-    30% {bottom:5%;}to{bottom:0%;}
-    40% {bottom:0% ;}to{bottom:5%;}
-    50% {bottom:5%;}to{bottom:0%;}
-    60% {bottom:0% ;}to{bottom:5%;}
-    70% {bottom:5%;}to{bottom:0%;}
-    80% {bottom:0% ;}to{bottom:5%;}
-    90% {bottom:5%;}to{bottom:0%;}
-    100% {bottom:0% ;}to{bottom:5%;}
+    0%  {top:0% ;}to{top:5%;}
+    10% {top:5%;}to{top:0%;}
+    20% {top:0% ;}to{top:5%;}
+    30% {top:5%;}to{top:0%;}
+    40% {top:0% ;}to{top:5%;}
+    50% {top:5%;}to{top:0%;}
+    60% {top:0% ;}to{top:5%;}
+    70% {top:5%;}to{top:0%;}
+    80% {top:0% ;}to{top:5%;}
+    90% {top:5%;}to{top:0%;}
+    100% {top:0% ;}to{top:5%;}
 }
 
 

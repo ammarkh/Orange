@@ -82,7 +82,7 @@
 
         msg.alertVertical = function (id) {
             var elementForAlert = document.getElementById(id);
-            const alertClass="msg-alertV";
+            const alertClass="alertV";
 
             if(elementForAlert.classList.contains(alertClass)){
               var elmNew = elementForAlert.cloneNode(true);

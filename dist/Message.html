@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./Css/Message.css" />
+    
+    <link rel="stylesheet"href="./Css/Orange.css" />
     <script src="./js/Orange.js"></script>
     <script src="./js/Message.js"></script>
     
@@ -12,21 +13,70 @@
 </head>
 <body>
 
-    <button onclick="showmsg1()">show alert</button>
+    <button class="bn bn-navy" onclick="showmsg1()">show alert navy</button>
 
-    <div id="msg1" class="msg msg-dark msg-md msg-hidden">
+    <div id="msg1" class="msg msg-navy msg-md msg-hidden">
         Welcome to my Message alert page .
         Welcome to my Message alert page .
     </div>
 
     
-      
+    <button class="bn bn-gold" onclick="showmsg2()">show alert gold</button>
+      <div id="msg2" class="msg msg-gold msg-lg msg-hidden">
+          welcome to gold message .
+          Welcome to my Message alert page .
+        Welcome to my Message alert page .
+        Welcome to my Message alert page .
+       
+      </div>
   
+      <button class="bn bn-danger bn-vertical" onclick="showmsg3()">show alert danger</button>
+      <div id="msg3" class="msg msg-danger msg-sm msg-hidden">
+          welcome to gold message .
+          Welcome to my Message alert page .
+        Welcome to my Message alert page .
+        Welcome to my Message alert page .
+       
+      </div>
+
+      <button class="bn bn-success" onclick="showmsg4()">show alert success</button>
+      <div id="msg4" class="msg msg-success msg-md msg-hidden">
+          welcome to gold message .
+          Welcome to my Message alert page .
+        Welcome to my Message alert page .
+        Welcome to my Message alert page .
+       
+      </div>
+
+      <button class="bn bn-dark" onclick="showmsg5()">show alert success</button>
+      <div id="msg5" class="msg msg-dark msg-lg msg-hidden">
+          welcome to gold message .
+          Welcome to my Message alert page .
+        Welcome to my Message alert page .
+        Welcome to my Message alert page .
+       
+      </div>
+
     <script>
         function showmsg1(){
          Orange.msg.show('msg1');
         }
     
+        function showmsg2(){
+            Orange.msg.show('msg2')
+        }
+
+        function showmsg3() {
+            Orange.msg.show('msg3');
+        }
+
+        function showmsg4(){
+            Orange.msg.show('msg4');
+        }
+
+        function showmsg5(){
+            Orange.msg.show('msg5');
+        }
         console.log(Orange);
     </script>
 
