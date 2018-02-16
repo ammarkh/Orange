@@ -24,61 +24,97 @@
 
 */
 
-var msg = (function(){
 
-  //constructor of msg
 
-    function msg(message){
-     alert(message);
-    }
 
-    //function for view message 
-    msg.show = function(id){
-      if(typeof id === 'string'){
+  //Orange.msg module
+  (function(window){
 
-        var msgEle =  document.getElementById(id);
-        const cssClass='msg-hidden';
+    var msg = (function(){
+
+      //constructor of msg
+    
+        function msg(message){
+         alert(message);
+        }
+    
+        //function for view message 
+        msg.show = function(id){
+          if(typeof id === 'string'){
+    
+            var msgEle =  document.getElementById(id);
+            const cssClass='msg-hidden';
+            
+            if(msgEle.classList.contains(cssClass)){
+                msgEle.classList.remove( "msg-hidden");
+                this.alertHerozinal(id);
+            }
+            else{
+              //element is already view return alert 
+              this.alertHerozinal(id);
+             
+            }
+          }else{
+            throw new ('id invalid should path Element Id like string');
+          }
+          // this.alert(id);
+        };
+    
+        msg.hide =function(id){
+          document.getElementById(id).classList.add("msg-hidden");
+        };
+    
+        msg.alertHerozinal =function(id){
+    
+          var elementForAlert =  document.getElementById(id);
+          const alertCLass="alertH";
+    
+          if(elementForAlert.classList.contains(alertCLass)){
+            //elementForAlert.classList.remove(alertCLass);
+            var elclone = elementForAlert.cloneNode(true);
+            elementForAlert.parentNode.replaceChild(elclone, elementForAlert);
+           
+          }else{
+            elementForAlert.classList.add(alertCLass);
+          }
+    
+        };
+
+        msg.alertVertical = function (id) {
+            var elementForAlert = document.getElementById(id);
+            const alertClass="msg-alertV";
+
+            if(elementForAlert.classList.contains(alertClass)){
+              var elmNew = elementForAlert.cloneNode(true);
+              elementForAlert.parentNode.replaceChild(elmNew, elementForAlert);
+            }else{
+              elementForAlert.classList.add(alertClass);
+            }
+
+        };
+    
+      
         
-        if(msgEle.classList.contains(cssClass)){
-            msgEle.classList.remove( "msg-hidden");
-            this.alert(id);
-        }
-        else{
-          //element is already view return alert 
-          this.alert(id);
-         
-        }
-      }else{
-        throw new 'id invalid should path Element Id like string';
-      }
-      // this.alert(id);
-    };
+        return msg;
+    
+    })();
+    
+    window.msg = msg;
+  return msg;  
 
-    msg.hide =function(id){
-      document.getElementById(id).classList.add("msg-hidden");
-    };
-
-    msg.alert =function(id){
-
-      var elementForAlert =  document.getElementById(id);
-      const alertCLass="alert";
-
-      if(elementForAlert.classList.contains(alertCLass)){
-        //elementForAlert.classList.remove(alertCLass);
-        var elclone = elementForAlert.cloneNode(true);
-        elementForAlert.parentNode.replaceChild(elclone, elementForAlert);
-       
-      }else{
-        elementForAlert.classList.add(alertCLass);
-      }
-
-    };
+  })(window);
+  
+  /*
+  msg.create = function(message){
+    return new msg(message);
+  }
+  */
 
   
-    return msg;
+ 
+  
+  
 
-})();
 
-msg.create = function(message){
-  return new msg(message);
-}
+
+

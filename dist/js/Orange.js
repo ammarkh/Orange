@@ -32,9 +32,17 @@
 
 */
 
-var Orange = window.Orange;
+var Orange = window;
 
-var O = window.Orange;
+
+
+
+// window.Orange.msg = msg;
+//var Orange = window.Orange;
+
+//var O = window.Orange;
+
+
 
 /**this library will content text, div, button, model , responsive , navbar, check box, radio button, socity icon, alertMessage, box, background, validation, chart , form 
  * 

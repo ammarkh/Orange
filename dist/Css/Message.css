@@ -22,13 +22,20 @@
     display: none;
 }
 /* we want make animation alone*/
-.alert{
-    animation-name: msg-Vip ;
+.alertH{
+    animation-name: msg-alertH ;
     animation-duration: 0.5s ;
     animation-timing-function: inherit;
 }
 
-@keyframes msg-Vip {
+.alertV{
+    animation-name: msg-alertV ;
+    animation-duration: 0.5s ;
+    animation-timing-function: inherit;
+}
+
+
+@-webkit-keyframes msg-alertH {
     0%  {left:0% ;}to{left:2%;}
     10% {left:2%;}to{left:0%;}
     20% {left:0% ;}to{left:2%;}
@@ -41,6 +48,50 @@
     90% {left:2%;}to{left:0%;}
     100% {left:0% ;}to{left:2%;}
 }
+
+
+@keyframes msg-alertH {
+    0%  {left:0% ;}to{left:2%;}
+    10% {left:2%;}to{left:0%;}
+    20% {left:0% ;}to{left:2%;}
+    30% {left:2%;}to{left:0%;}
+    40% {left:0% ;}to{left:2%;}
+    50% {left:2%;}to{left:0%;}
+    60% {left:0% ;}to{left:2%;}
+    70% {left:2%;}to{left:0%;}
+    80% {left:0% ;}to{left:2%;}
+    90% {left:2%;}to{left:0%;}
+    100% {left:0% ;}to{left:2%;}
+}
+
+@-webkit-keyframes msg-alertV{
+    0%  {bottom:0% ;}to{bottom:5%;}
+    10% {bottom:5%;}to{bottom:0%;}
+    20% {bottom:0% ;}to{bottom:5%;}
+    30% {bottom:5%;}to{bottom:0%;}
+    40% {bottom:0% ;}to{bottom:5%;}
+    50% {bottom:5%;}to{bottom:0%;}
+    60% {bottom:0% ;}to{bottom:5%;}
+    70% {bottom:5%;}to{bottom:0%;}
+    80% {bottom:0% ;}to{bottom:5%;}
+    90% {bottom:5%;}to{bottom:0%;}
+    100% {bottom:0% ;}to{bottom:5%;}
+}
+
+@keyframes msg-alertV{
+    0%  {bottom:0% ;}to{bottom:5%;}
+    10% {bottom:5%;}to{bottom:0%;}
+    20% {bottom:0% ;}to{bottom:5%;}
+    30% {bottom:5%;}to{bottom:0%;}
+    40% {bottom:0% ;}to{bottom:5%;}
+    50% {bottom:5%;}to{bottom:0%;}
+    60% {bottom:0% ;}to{bottom:5%;}
+    70% {bottom:5%;}to{bottom:0%;}
+    80% {bottom:0% ;}to{bottom:5%;}
+    90% {bottom:5%;}to{bottom:0%;}
+    100% {bottom:0% ;}to{bottom:5%;}
+}
+
 
 /*
 .msg::after{
