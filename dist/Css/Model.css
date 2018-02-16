@@ -1,0 +1,54 @@
+/*model default style*/
+
+.org-model{
+    border:2px solid lightgray;
+    display: inline-block;
+    box-shadow: 0px 1px 2px 0px rgba(110, 110, 110, 0.5);
+    border-radius: 1em;
+    min-width: 30%;
+    max-width: 60%;
+}
+
+.org-model-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 1px;
+    padding:8px 14px;
+    font-weight: bold;
+    margin: 4px 12px;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    
+}
+
+.org-model-body{
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 16px 0px;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    text-indent: 4px;
+}
+
+.org-model-footer{
+    text-indent: 1em;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 16px 0px;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+}
+
+.org-model button{
+    float: right;
+    margin: 15px;
+}
+
+/* model color */
+
+/* model style*/
+
+/* model container style */
+
+/* close icon style */
