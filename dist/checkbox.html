@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Css/Orange.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="checkbox" name="" id="ch" onchange="chge(this);" class="chk chk-danger">
+    <input type="checkbox" name="" id="" class="chk chk-success chk-nb-false">
+    <input type="checkbox" name="" id="" class="chk chk-s-false">
+    <input type="checkbox" name="" id="" class="chk chk-dark chk-b-false">
+    <input type="checkbox" name="" id="" class="chk chk-navy chk-s-true" > checkBox Default
+    <br>
+    <input type="checkbox" name="" id="ch" onchange="chge(this);" class="chk chk-danger">
+    <input type="checkbox" name="" id="" class="chk chk-success chk-nb-false">
+    <input type="checkbox" name="" id="" class="chk chk-s-false">
+    <input type="checkbox" name="" id="" class="chk chk-dark chk-b-false">
+    <input type="checkbox" name="" id="" class="chk chk-navy chk-s-true" > checkBox Default
+    <br>
+    <input type="checkbox" name="" id="ch" onchange="chge(this);" class="chk chk-danger">
+    <input type="checkbox" name="" id="" class="chk chk-success chk-n-true">
+    <input type="checkbox" name="" id="" class="chk chk-b-p">
+    <input type="checkbox" name="" id="" class="chk chk-dark chk-s-p">
+    <input type="checkbox" name="" id="" class="chk chk-navy chk-s-true" > checkBox Default
+</body>
+<script>
+    var  ch = document.getElementById('ch');
+    function chge(obj){
+        console.log(obj.checked);
+    }
+</script>
+</html>
