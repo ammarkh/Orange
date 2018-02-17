@@ -31,8 +31,13 @@
     </div>
 -->
     <!-- model default end -->
-    <div class='org-model-container'>
-            <div class='org-model'>
+
+    <button class='bn bn-navy' onclick="slidedownModel(model1)">show model </button>
+   
+
+
+    <div class='org-model-container' id='model1'>
+            <div class='org-model org-model-df'>
                 <div class='org-model-title'>this is  a model title this is  a model title this is  a model title a model title a model title a model title</div>
                 <div class='org-model-body'>this is a body title This CSS tutorial contains hundreds of CSS examples.
     
@@ -44,9 +49,37 @@
                     The background image for a page can be set like this:
                 </div>
                 <div class='org-model-footer'>this is a footer
-                    <button class="bn bn-danger"> cancel</button>    
+                    <button class="bn bn-danger" onclick='closedownModel(model1);'> cancel</button>    
                 </div>
             </div>
         </div>
 </body>
+
+<script>
+    function showModel(){
+       // document.getElementById('model1').style.display ='block';
+    }
+
+    function closedownModel(el){
+        //console.log(el);
+        //document.getElementById(el).style.display = 'none';
+       
+      // el.classList.remove('org-v-o');
+     // debugger;
+     el.classList.remove('org-v-d-o');
+       el.classList.add('org-v-d-c');
+       el.style.top = '-100%';
+    }
+
+    function slidedownModel(el){
+      
+        el.classList.add('org-v-d-o');
+        el.classList.remove('org-v-d-c');
+        el.style.top='0';
+    }
+
+   
+
+</script>
+
 </html>

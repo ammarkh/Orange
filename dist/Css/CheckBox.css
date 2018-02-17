@@ -1,6 +1,9 @@
+/* this checkbox for Google Chrome  */
+
 .chk{
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
     position: relative;
     width:20px;
     height:20px;
@@ -23,12 +26,14 @@
     content:'\2714';
 }
 
+
+
 .chk-success{
     border:2px solid rgb(38, 171, 23);
     background: rgb(51, 178, 36);
 }
 
-.chk-success:checked::after{
+.chk-success:checked::after {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color:white;
@@ -37,6 +42,8 @@
     left:0px;
     content:'\2714';
 }
+
+
 
 .chk-danger{
     border:2px solid rgb(179, 68, 66);
@@ -113,5 +120,56 @@
 
 .chk-n-true:checked::after{
     content:'\25FC';
+}
+
+.chk-n-true::-ms-check::after{
+    content:'\25FC';
+}
+
+/* slide checkbox  */
+
+.slide-chk{
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    background:gray;
+    border:1px solid gray;
+    position: relative;
+    width:40px;
+    height:20px;
+    outline: none;
+    border-radius: 1em;
+}
+/*
+.slide-chk::after{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color:white;
+    position: absolute;
+    top:-6px;
+    left:0px;
+    content:'\26AB';
+}
+*/
+
+
+.slide-chk::after + label{
+    background: gray;
+    color:white;
+}
+
+.slide-chk:checked{
+    background-color:white;
+}
+
+.slide-chk:checked::after{
+    position: absolute;
+    right:0px;
+    top:-6px;
+    font-size: 20px;
+    content:'\26AB';
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    transition: all 0.4s ease ;
+    -webkit-transition: all 0.4s ease ;
 }

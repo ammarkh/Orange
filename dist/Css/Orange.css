@@ -2,6 +2,8 @@
     @import url(Message.css);
     @import url(Text.css);
     @import url(CheckBox.css);
+    @import url(alerts.css);
+    @import url(Model.css);
 /*Classes for Orange Css */
 
 .Page_Main {

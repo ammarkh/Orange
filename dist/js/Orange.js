@@ -44,7 +44,7 @@ var Orange = window;
 
 
 
-/**this library will content text, div, button, model , responsive , navbar, check box, radio button, socity icon, alertMessage, box, background, validation, chart , form 
+/**this library will content text, div, button, model , responsive , navbar, check box, radio button, socity icon, alertMessage, box, background, validation, chart , form ,calender
  * 
  * table, auto complete , navbar
  */
