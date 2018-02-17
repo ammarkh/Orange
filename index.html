@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+	<title>Document</title>
+	<script src="./dist/js/Orange.js"></script>
+	<script src="./dist/js/model.js"></script>
 
     <style type="text/css">
 		.tb {
@@ -167,9 +168,37 @@
 				var x = document.getElementsByClassName('add-item')[0];
 				x.setAttribute('style','visibility:hidden;display:none');
 			}
+/*
+			function car (message) {
+				// body
+				this.message = message;
+				console.log(message);
+			};
+				car.prototype.speed = function (message) {
+					console.log(message);
+					return this;
+				};
 
+				car.prototype.count = function (message) {
+					console.log(1000);
+					return this;
+				};
 			
 
+			var Orange = function (msg){
+				return new car(msg);
+			};
+			*/
+			/*
+			Orange('eld').count('els').speed('asw');
+
+			console.log(window);
+
+			console.log(window.model().showModel('mmsd'));
+			*/
+			console.log(Orange('[input: type]').checkParamType() );
+
+			console.log(window.model());
 	</script>
     
 </body>

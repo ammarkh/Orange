@@ -1,38 +1,8 @@
 
-/*
-(function (window){
-    var root = function (){
-        this.root = null;
-    };
 
-    root.prototype={
-        data: [],
-        getData: function (){
-            return this.data;
-        },
-        setData:function (values){
-           
-            if(Array.isArray(values)){
-                for(i = 0; i< values.length; i++){
-                    this.data.push(values[i]);
-                }
-            }   else {
-                this.data.push(values);
-            }
-            
-        },
-        printData: function (){
-            console.log(this.data);
-        }
-    };
 
-    window.root = root;
-    return root;
-})(window);
 
-*/
-
-var Orange = window;
+//var Orange = window;
 
 
 
@@ -55,17 +25,38 @@ var Orange = window;
  function Orange  (message){
    // constructor  will be orange (message) this is a call
    
-    
-  
- }
 
- Orange .getItem = function (){
-  alert(item);
- };
-
- return Orange;
-
-})();
-
-  * 
   */
+
+  var Orange =function (el) {
+
+    function Orange (el){
+        this.el = el ;
+    };
+
+    Orange.prototype.model  = function (el){
+        //body
+            this.model = window.model(el);
+        return this;
+    };
+
+    Orange.prototype.checkParamType = function (){
+        if(typeof el === 'undefined'){
+            console.log('error : cannot use Orange with no element ');
+        }
+
+        if (typeof this.el === 'string'){       // function for check if param string 
+            if(this.el.toString().startsWith('#'))// function for id 
+                console.log('id'+ el);
+            else if(this.el.toString().startsWith('.')){  // check for class 
+                console.log('class parameter ' + el);
+            }
+            else if (this.el.toString().startsWith('[') && this.el.toString().endsWith(']')){
+                console.log(this.el.toString().substr(this.el.toString().startsWith(':'), this.el.toString().length));
+                console.log('tag parameter ');
+            }
+        }
+    };
+
+     return new Orange(el);
+  };
