@@ -33,11 +33,11 @@
     <!-- model default end -->
 
     <button class='bn bn-navy' onclick="slidedownModel(model1)">show model </button>
-   
+   <button class="bn bn-danger" onclick="popup(model1)">popup model</button>
 
 
     <div class='org-model-container' id='model1'>
-            <div class='org-model org-model-df'>
+            <div class='org-model org-model-navy org-model-sm'>
                 <div class='org-model-title'>this is  a model title this is  a model title this is  a model title a model title a model title a model title</div>
                 <div class='org-model-body'>this is a body title This CSS tutorial contains hundreds of CSS examples.
     
@@ -49,7 +49,7 @@
                     The background image for a page can be set like this:
                 </div>
                 <div class='org-model-footer'>this is a footer
-                    <button class="bn bn-danger" onclick='closedownModel(model1);'> cancel</button>    
+                    <button class="bn bn-default" onclick='closedownModel(model1);'> cancel</button>    
                 </div>
             </div>
         </div>
@@ -76,6 +76,13 @@
         el.classList.add('org-v-d-o');
         el.classList.remove('org-v-d-c');
         el.style.top='0';
+    }
+
+    function popup(el){
+       
+          el.classList.add('org-popup-o');
+          el.style.display="block";
+          
     }
 
    

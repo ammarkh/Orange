@@ -1,14 +1,13 @@
 /*model default style*/
 
 .org-model{
-    border:2px solid lightgray;
+    border:3px solid lightgray;
     display: inline-block;
     box-shadow: 0px 1px 2px 0px rgba(110, 110, 110, 0.5);
     border-radius: 1em;
     min-width: 30%;
     max-width: 60%;
 
-   
 }
 
 .org-model-title{
@@ -16,7 +15,7 @@
     text-indent: 1px;
     padding:8px 14px;
     font-weight: bold;
-    margin: 4px 12px;
+    margin: 4px 18px;
     word-wrap: break-word;
     -ms-word-wrap: break-word;
     
@@ -55,7 +54,30 @@
 
 .org-model-df{
     background: white;
+    border:gray 3px solid;
 }
+/* 
+will add a style color later 
+
+
+.org-model-danger{
+    color:white;
+     border:3px solid rgb(179, 68, 66);
+     background: rgb(215, 42, 40);
+    }.org-model-body{
+        background:white;
+        color:rgb(179, 68, 66);
+    }
+
+    .org-model-navy{
+        color:white;
+         border:3px solid rgb(39, 74, 230);
+         background: rgb(45, 98, 245);
+        }.org-model-body{
+            background:white;
+            color:rgb(44, 101, 224);
+        }
+    */
 
 /* model style*/
 
@@ -107,6 +129,12 @@
     -webkit-animation: slide-v-d-c 0.5s;
     display: block;
 }
+
+.org-popup-o{   /* popup open*/
+    animation:popup-o 4s;
+    -webkit-animation: popup-o 1s;
+}
+
 /* open slide */
 @-webkit-keyframes slide-v-o{
     from{top: 100%;}to{top: 0%;}
@@ -143,3 +171,58 @@
 @keyframes slide-v-d-c{
     from{top:0%;}to {top:-100%;}
 }
+
+/*popup animation */
+
+@keyframes popup-o{
+    0%  { opacity:0.0; } to { opacity: 0.1; }
+    10% { opacity:0.1; } to { opacity: 0.2; }
+    20% { opacity:0.2; } to { opacity: 0.3; }
+    30% { opacity:0.3; } to { opacity: 0.4; }
+    40% { opacity:0.4; } to { opacity: 0.5; }
+    50% { opacity:0.5; } to { opacity: 0.6; }
+    60% { opacity:0.6; } to { opacity: 0.7; }
+    70% { opacity:0.7; } to { opacity: 0.8; }
+    80% { opacity:0.8; } to { opacity: 0.9; }
+    90% { opacity:0.9; } to { opacity: 0.95; }
+    10% { opacity:0.95; } to { opacity: 1; }
+}
+
+@-webkit-keyframes popup-o{
+    0%  { opacity:0.0; } to { opacity: 0.1; }
+    10% { opacity:0.1; } to { opacity: 0.2; }
+    20% { opacity:0.2; } to { opacity: 0.3; }
+    30% { opacity:0.3; } to { opacity: 0.4; }
+    40% { opacity:0.4; } to { opacity: 0.5; }
+    50% { opacity:0.5; } to { opacity: 0.6; }
+    60% { opacity:0.6; } to { opacity: 0.7; }
+    70% { opacity:0.7; } to { opacity: 0.8; }
+    80% { opacity:0.8; } to { opacity: 0.9; }
+    90% { opacity:0.9; } to { opacity: 0.95; }
+    10% { opacity:0.95; } to { opacity: 1; }
+}
+
+
+
+
+/*model size*/
+
+.org-model-sm{
+    min-width: 20%;
+    max-width: 30%;
+    left: 35%;
+}
+
+.org-model-md{
+    min-width: 20%;
+    max-width: 50%;
+    left: 25%;
+}
+
+.org-model-lg{
+    min-width: 20%;
+    max-width: 70%;
+    left: 15%;
+}
+
+/**/
