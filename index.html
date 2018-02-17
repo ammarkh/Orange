@@ -98,7 +98,7 @@
 </head>
 <body>
 
-	<button class="btn" onclick="addFormsShow()">
+	<button id='btn1' class="btn" onclick="addFormsShow()">
 		add New Item 
 	</button>
 	<br/><br/>
@@ -196,9 +196,13 @@
 
 			console.log(window.model().showModel('mmsd'));
 			*/
-			console.log(Orange('[input: type]').checkParamType() );
+			Orange(btn1).checkParamType();
 
 			console.log(window.model());
+
+			var x = document.getElementsByTagName('button');
+		console.log(x);
+
 	</script>
     
 </body>
