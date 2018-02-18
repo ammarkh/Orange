@@ -1,209 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<script src="./dist/js/Orange.js"></script>
-	<script src="./dist/js/model.js"></script>
+    <title>Document</title>
+    <script src="./dist/js/Orange.js"></script>
+    <script src="./dist/js/model.js"></script>
 
     <style type="text/css">
-		.tb {
-			width:100%;
-			height:auto;
-			border-radius: 5px;
-			border:1px solid gray;
-			font-family: arial;
-		}
-
-		.tb thead th{
-			background-color:  rgb(3, 155, 259);
-			color:white;
-			padding:12px 0px 12px 0px;
-		}
-
-		.tb .row{
-			width: 100%;
-			height:10%;
-
-		}
-
-		.tb .row:nth-child(odd){
-			background-color:rgb(247, 249, 251);
-		}
-
-		.tb .row .col {
-			font-family: verdana;
-			font-size: 18px;
-			text-align: center;
-			border-bottom: 1px solid rgb(3, 155, 259);
-			padding:12px;
-		}
-
-		.tb .row:last-child .col {
-			border-bottom: none;
-		}
-
-		.btn{
-			border:1px solid rgb(2, 115, 240);
-			color:white;
-			background-color:rgb(2, 115, 240);
-		    padding: 15px 32px;
-  			 text-align: center;
-   			 text-decoration: none;
-   			 display: inline-block;
-			font-size: 18px;
-			font-family: verdana, sans-serif;
-
-		}
-		.btn:hover{
- 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-		}
-
-
-		.add-item{
-			border:1px solid lightgray;
-			padding:12px 24px;
-			
-			 -webkit-transition: visibility 0.5s;
-    		transition: visibility 0.5s;
-			
-		}
-
-		.add-item input[type=text]{
-			color:darggray;
-			padding:5px;
-			font-family: arial;
-			font-size: 18px;
-			border-radius: 4px;
-			border: 2px solid gray;
-			width:34%;
-		}
-
-		.add-item input[type=text]:focus{
-			outline: none;
-		}
-
-
-		.tb .row .col input[type=text][readonly="true"]{
-			background: white;
-			text-align: center;
-			border:none;
-
-		}
-	</style>
+        .btn {
+            border: 1px solid rgb(2, 115, 240);
+            color: white;
+            background-color: rgb(2, 115, 240);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            font-family: verdana, sans-serif;
+        }
+        
+        .btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .add-item {
+            border: 1px solid lightgray;
+            padding: 12px 24px;
+            -webkit-transition: visibility 0.5s;
+            transition: visibility 0.5s;
+        }
+        
+        .add-item input[type=text] {
+            color: darggray;
+            padding: 5px;
+            font-family: arial;
+            font-size: 18px;
+            border-radius: 4px;
+            border: 2px solid gray;
+            width: 34%;
+        }
+        
+        .add-item input[type=text]:focus {
+            outline: none;
+        }
+        
+        .tb .row .col input[type=text][readonly="true"] {
+            background: white;
+            text-align: center;
+            border: none;
+        }
+    </style>
 
 
 </head>
+
 <body>
 
-	<button id='btn1' class="btn" onclick="addFormsShow()">
+    <button id='btn1' class="btn" onclick="addFormsShow()">
 		add New Item 
 	</button>
-	<br/><br/>
+    <br/><br/>
 
-	<div class="add-item"  style="visibility: hidden;">
-		Name : <input type="text" name="">
-		Name : <input type="text" name=""><br><br>
-		Name : <input type="text" name="">
-		Name : <input type="text" name=""><br><br>
-		Name : <input type="text" name=""><br><br>
+    <div class="add-item" style="visibility: hidden;">
+        Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""><br><br>
 
-		<button class="btn">Submit</button>
-		<button class="btn" onclick="addFormshide()">Cancel</button>
-	</div>
-	<br/><br/>
+        <button class="btn">Submit</button>
+        <button class="btn" onclick="addFormshide()">Cancel</button>
+    </div>
+    <br/><br/>
 
-	<table class="tb">
-		<thead>
-			<tr class="row">
-				<th class="col">Col 1</th>
-				<th class="col">Col 2</th>
-				<th class="col">Col 3</th>
-				<th class="col">Col 4</th>
-			</tr>
-		</thead>
-		<tr class="row">
-			<td class="col">data</td>
-			<td class="col">data</td>
-			<td class="col">data</td>
-			<td class="col">data</td>
-		</tr>
-		<tr class="row">
-			<td class="col">data</td>
-			<td class="col">data</td>
-			<td class="col">data</td>
-			<td class="col">data</td>
-		</tr>
-		<tr class="row">
-			<td class="col">data</td>
-			<td class="col">data</td>
-			<td class="col">data</td>
-			<td class="col">data</td>
-		</tr>
-		<tr class="row">
-			<td class="col"><input type="text" name="" value="data" readonly="true"> </td>
-			<td class="col"><input type="text" name="" value="data" readonly="true"> </td>
-			<td class="col"><input type="text" name="" value="data" readonly="true"> </td>
-			<td class="col">
-				<button>Eidt</button>
-				<button>Details</button>
-				<button>Delete</button>
-			</td>
-		</tr>
-		<tfoot>
-			
-		</tfoot>
-	</table>
-	<script type="text/javascript">
-			
-			function addFormsShow(){
-				var x = document.getElementsByClassName('add-item')[0];
-				x.removeAttribute('style');
 
-			}
+    <script type="text/javascript">
+        function addFormsShow() {
+            var x = document.getElementsByClassName('add-item')[0];
+            x.removeAttribute('style');
 
-			function addFormshide(){
-				var x = document.getElementsByClassName('add-item')[0];
-				x.setAttribute('style','visibility:hidden;display:none');
-			}
-/*
-			function car (message) {
-				// body
-				this.message = message;
-				console.log(message);
-			};
-				car.prototype.speed = function (message) {
-					console.log(message);
-					return this;
-				};
+        }
 
-				car.prototype.count = function (message) {
-					console.log(1000);
-					return this;
-				};
-			
+        function addFormshide() {
+            var x = document.getElementsByClassName('add-item')[0];
+            x.setAttribute('style', 'visibility:hidden;display:none');
+        }
+        /*
+        			function car (message) {
+        				// body
+        				this.message = message;
+        				console.log(message);
+        			};
+        				car.prototype.speed = function (message) {
+        					console.log(message);
+        					return this;
+        				};
 
-			var Orange = function (msg){
-				return new car(msg);
-			};
-			*/
-			/*
-			Orange('eld').count('els').speed('asw');
+        				car.prototype.count = function (message) {
+        					console.log(1000);
+        					return this;
+        				};
+        			
 
-			console.log(window);
+        			var Orange = function (msg){
+        				return new car(msg);
+        			};
+        			*/
+        /*
+        Orange('eld').count('els').speed('asw');
 
-			console.log(window.model().showModel('mmsd'));
-			*/
-			Orange(btn1).checkParamType();
+        console.log(window);
 
-			console.log(window.model());
+        console.log(window.model().showModel('mmsd'));
+        */
+        // Orange(btn1).checkParamType();
+        console.log(Orange(btn1).model().viewData());
 
-			var x = document.getElementsByTagName('button');
-		console.log(x);
 
-	</script>
-    
+        /*		Orange(id , class , tag)  . model ().amation
+        		
+        	*/
+    </script>
+
 </body>
+
 </html>

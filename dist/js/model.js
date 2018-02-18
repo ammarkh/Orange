@@ -1,46 +1,25 @@
-(function (window) {
+/**this module for model */
 
-    var model = (function (){
+(function(window) {
 
-        function model (modelId){
-            this.modelId = modelId;
-        }
-    
-        model.prototype.showModel = function  (arguments) {
-            // body
-            window.alert('msf');
+    var model = (function() {
+
+        function model(el) {
+
+            //console.log(el);
+            this.el = el;
+        };
+
+        model.prototype.viewData = function() {
+            alert(typeof this.el);
+
             return this;
         };
-    
-        model.prototype.hideModel = function (params) {
-            //body
-            return this;
-        };
-    
-        model.prototype.slideDownOpen = function (params) {
-            //body
-            return this;
-        };
-    
-        model.prototype.slideDownClose =function (params) {
-            //body
-            return this;
-        };
-    
-        model.prototype.slideUpOpen = function (params) {
-            //body;
-            return this;
-        }
-    
         return model;
-    
     })();
-    
-    window.model = function (modelId){
 
-        return new model(modelId);
+    window.model = function(el) {
+        return new model(el);
     };
 
 })(window);
-
-

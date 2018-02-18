@@ -1,7 +1,3 @@
-
-
-
-
 //var Orange = window;
 
 
@@ -19,60 +15,54 @@
  * table, auto complete , navbar
  */
 
- /**
-  * var Orange = (function(){
+/**
+ * var Orange = (function(){
 
- function Orange  (message){
-   // constructor  will be orange (message) this is a call
-   
+function Orange  (message){
+  // constructor  will be orange (message) this is a call
+  
 
-  */
+ */
 
-  var Orange =function (el) {
+var Orange = function(el) {
 
-    function Orange (el){
-        this.el = el ;
-    };
+    function Orange(el) {
+        this.el = el;
+    }
 
     //model function 
-    Orange.prototype.model  = function (el){
+    Orange.prototype.model = function(el) {
         //body
-            this.model = window.model(this.el);
-        return this;
+        var element = this.checkParamType();
+        this.model = window.model(this.el);
+        return this.model;
     };
 
-    Orange.prototype.message = function(el){
+    Orange.prototype.message = function(msg) {
         //body
-        this.message = window.message(this.el);
-        return this;
+        this.message = window.message(msg);
+        return this.message;
     };
 
-    Orange.prototype.checkParamType = function (){
-        if(typeof this.el === 'undefined'){
-            
+    Orange.prototype.checkParamType = function() {
+
+        if (typeof this.el === 'undefined') {
+
             console.log('error : cannot use Orange with no element ');
 
             //throw error invalid param.
+        } else if (typeof this.el === 'string') {
+            if (this.el.startsWith('#')) {
+                /**return element id  */
+                return document.getElementById(this.el);
+            } else {
+                // throw new exception not valid 
+            }
+        } else if (typeof this.el === 'object') {
+            return this.el;
         }
 
-        if (typeof this.el === 'string'){       // function for check if param string 
-            if(this.el.toString().startsWith('#'))// function for id 
-                console.log('id'+ el);
-            else if(this.el.toString().startsWith('.')){  // check for class 
-               // console.log('class parameter ' + el);
-               var allELementsClass = document.getElementsByClassName(el);
-            }
-            else if (this.el.toString().startsWith('[') && this.el.toString().endsWith(']')){
-                
-               var tagName =this.el.toString().trim().substring(this.el.indexOf(':')+1, this.el.length-1);
-                
-               // console.log(tagName);
-            }
-        } else {
-            console.log(this.el);
-        }
-     
     };
 
-     return new Orange(el);
-  };
+    return new Orange(el);
+};

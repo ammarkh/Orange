@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="./js/model.js" type='text/javascript'></script>
     <title>Document</title>
 </head>
+
 <body>
 
     <!-- model default -->
@@ -33,60 +35,51 @@
     <!-- model default end -->
 
     <button class='bn bn-navy' onclick="slidedownModel(model1)">show model </button>
-   <button class="bn bn-danger" onclick="popup(model1)">popup model</button>
+    <button class="bn bn-danger" onclick="popup(model1)">popup model</button>
 
 
     <div class='org-model-container' id='model1'>
-            <div class='org-model org-model-navy org-model-sm'>
-                <div class='org-model-title'>this is  a model title this is  a model title this is  a model title a model title a model title a model title</div>
-                <div class='org-model-body'>this is a body title This CSS tutorial contains hundreds of CSS examples.
-    
-                    With our online editor, you can edit the CSS, and click on a button to view the result.
-                    The background-image property specifies an image to use as the background of an element.
-    
-                    By default, the image is repeated so it covers the entire element.
-    
-                    The background image for a page can be set like this:
-                </div>
-                <div class='org-model-footer'>this is a footer
-                    <button class="bn bn-default" onclick='closedownModel(model1);'> cancel</button>    
-                </div>
+        <div class='org-model org-model-navy org-model-sm'>
+            <div class='org-model-title'>this is a model title this is a model title this is a model title a model title a model title a model title</div>
+            <div class='org-model-body'>this is a body title This CSS tutorial contains hundreds of CSS examples. With our online editor, you can edit the CSS, and click on a button to view the result. The background-image property specifies an image to use as the background of
+                an element. By default, the image is repeated so it covers the entire element. The background image for a page can be set like this:
+            </div>
+            <div class='org-model-footer'>this is a footer
+                <button class="bn bn-default" onclick='closedownModel(model1);'> cancel</button>
             </div>
         </div>
+    </div>
 </body>
 
 <script>
-    function showModel(){
-       // document.getElementById('model1').style.display ='block';
+    function showModel() {
+        // document.getElementById('model1').style.display ='block';
     }
 
-    function closedownModel(el){
+    function closedownModel(el) {
         //console.log(el);
         //document.getElementById(el).style.display = 'none';
-       
-      // el.classList.remove('org-v-o');
-     // debugger;
-     el.classList.remove('org-v-d-o');
-       el.classList.add('org-v-d-c');
-       el.style.top = '-100%';
+
+        // el.classList.remove('org-v-o');
+        // debugger;
+        el.classList.remove('org-v-u-o');
+        el.classList.add('org-v-u-c');
+        el.style.top = '-100%';
     }
 
-    function slidedownModel(el){
-      
-        el.classList.add('org-v-d-o');
-        el.classList.remove('org-v-d-c');
-        el.style.top='0';
+    function slidedownModel(el) {
+
+        el.classList.add('org-v-u-o');
+        el.classList.remove('org-v-u-c');
+        el.style.top = '0';
     }
 
-    function popup(el){
-       
-          el.classList.add('org-popup-o');
-          el.style.display="block";
-          
+    function popup(el) {
+
+        el.classList.add('org-popup-o');
+        el.style.display = "block";
+
     }
-
-   
-
 </script>
 
 </html>
