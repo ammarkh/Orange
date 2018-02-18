@@ -16,26 +16,26 @@
 <body>
 
     <button class="bn bn-navy" onclick="showMsg()">show alert navy</button>
+    <button class="bn bn-danger" onclick="closeMessage()">Close </button>
+    <br>
 
-    <div id="msg1" class="msg msg-navy msg-md msg-hidden">
-
-    </div>
+    <div id="msg1" class="o-msg o-msg-navy o-msg-md o-msg-hidden"></div>
 
 
 
     <script>
         /*
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            the best syntax is Orange(id).message('id').show('message');
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    the best syntax is Orange(id).message('id').show('message');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
         function showMsg() {
-            Orange().message('this text will be define as text in message ').show('msg1');
+            Orange().message('this text will be define as text in message <big> you will find after adit data struct </big> ').show('msg1');
         }
 
 
         console.log(Orange());
 
         function closeMessage() {
-            Orange().message().hide('msg3');
+            Orange().message().hide('msg1');
         }
     </script>
 

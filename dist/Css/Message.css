@@ -1,11 +1,10 @@
 /** this file will content Message Css Classes */
 
-
-.msg{
-    padding:16px 25px;
+.o-msg {
+    padding: 16px 25px;
     display: inline-block;
-    border:1px solid lightgray;
-    border-radius:4px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -14,82 +13,299 @@
     user-select: none;
     overflow: hidden;
     word-wrap: break-word;
-    
-   
 }
 
-.msg-hidden{
+.o-msg-hidden {
     display: none;
 }
+
+
 /* we want make animation alone*/
-.alertH{
-    animation-name: msg-alertH ;
-    animation-duration: 0.5s ;
-   
+
+.o-msg-alertH {
+    animation-name: msg-alertH;
+    animation-duration: 0.5s;
 }
 
-.alertV{
-    animation-name: msg-alertV ;
-    animation-duration: 0.5s ;
-   
+.o-msg-alertV {
+    animation-name: msg-alertV;
+    animation-duration: 0.5s;
 }
-
 
 @-webkit-keyframes msg-alertH {
-    0%  {left:0% ;}to{left:2%;}
-    10% {left:2%;}to{left:0%;}
-    20% {left:0% ;}to{left:2%;}
-    30% {left:2%;}to{left:0%;}
-    40% {left:0% ;}to{left:2%;}
-    50% {left:2%;}to{left:0%;}
-    60% {left:0% ;}to{left:2%;}
-    70% {left:2%;}to{left:0%;}
-    80% {left:0% ;}to{left:2%;}
-    90% {left:2%;}to{left:0%;}
-    100% {left:0% ;}to{left:2%;}
+    0% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    10% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    30% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    40% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    50% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    60% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    70% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    80% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    90% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
 }
-
 
 @keyframes msg-alertH {
-    0%  {left:0% ;}to{left:2%;}
-    10% {left:2%;}to{left:0%;}
-    20% {left:0% ;}to{left:2%;}
-    30% {left:2%;}to{left:0%;}
-    40% {left:0% ;}to{left:2%;}
-    50% {left:2%;}to{left:0%;}
-    60% {left:0% ;}to{left:2%;}
-    70% {left:2%;}to{left:0%;}
-    80% {left:0% ;}to{left:2%;}
-    90% {left:2%;}to{left:0%;}
-    100% {left:0% ;}to{left:2%;}
+    0% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    10% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    30% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    40% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    50% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    60% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    70% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    80% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
+    90% {
+        left: 2%;
+    }
+    to {
+        left: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+    to {
+        left: 2%;
+    }
 }
 
-@-webkit-keyframes msg-alertV{
-    0%  {top:0% ;}to{top:5%;}
-    10% {top:5%;}to{top:0%;}
-    20% {top:0% ;}to{top:5%;}
-    30% {top:5%;}to{top:0%;}
-    40% {top:0% ;}to{top:5%;}
-    50% {top:5%;}to{top:0%;}
-    60% {top:0% ;}to{top:5%;}
-    70% {top:5%;}to{top:0%;}
-    80% {top:0% ;}to{top:5%;}
-    90% {top:5%;}to{top:0%;}
-    100% {top:0% ;}to{top:5%;}
+@-webkit-keyframes msg-alertV {
+    0% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    10% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    20% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    30% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    40% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    50% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    60% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    70% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    80% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    90% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    100% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
 }
 
-@keyframes msg-alertV{
-    0%  {top:0% ;}to{top:5%;}
-    10% {top:5%;}to{top:0%;}
-    20% {top:0% ;}to{top:5%;}
-    30% {top:5%;}to{top:0%;}
-    40% {top:0% ;}to{top:5%;}
-    50% {top:5%;}to{top:0%;}
-    60% {top:0% ;}to{top:5%;}
-    70% {top:5%;}to{top:0%;}
-    80% {top:0% ;}to{top:5%;}
-    90% {top:5%;}to{top:0%;}
-    100% {top:0% ;}to{top:5%;}
+@keyframes msg-alertV {
+    0% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    10% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    20% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    30% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    40% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    50% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    60% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    70% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    80% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
+    90% {
+        top: 5%;
+    }
+    to {
+        top: 0%;
+    }
+    100% {
+        top: 0%;
+    }
+    to {
+        top: 5%;
+    }
 }
 
 
@@ -108,58 +324,53 @@
 }
 */
 
-
-
-
-
-
-.msg-danger{
+.o-msg-danger {
     background-color: rgb(202, 55, 55);
-    color:white;
+    color: white;
     user-select: none;
 }
 
-.msg-navy {
+.o-msg-navy {
     background-color: rgb(33, 144, 235);
-    color:white;
+    color: white;
     user-select: none;
 }
 
-.msg-success{
+.o-msg-success {
     background-color: rgb(22, 187, 58);
-    color:white;
+    color: white;
     user-select: none;
 }
 
-.msg-dark{
+.o-msg-dark {
     background-color: rgb(110, 110, 110);
-    color:white;
+    color: white;
     user-select: none;
 }
 
-.msg-gold{
+.o-msg-gold {
     background-color: rgba(255, 204, 36, 0.973);
-    color:white;
+    color: white;
     user-select: none;
 }
 
-.msg-nice{
+.o-msg-nice {
     background: rgb(68, 177, 172);
-    color:white;
+    color: white;
     user-select: none;
 }
 
-.msg-lg{
-    width:95%;
+.o-msg-lg {
+    width: 95%;
     max-width: 95%;
 }
 
-.msg-md{
-    width:60%;
+.o-msg-md {
+    width: 60%;
     max-width: 60%;
 }
 
-.msg-sm{
-    width:35%;
+.o-msg-sm {
+    width: 35%;
     max-width: 35%;
 }

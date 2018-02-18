@@ -1,31 +1,3 @@
-/**standard  
-(function (){
-
-  var Orange = (function(){
-
-    function Orange  (message){
-      // constructor  will be orange (message) this is a call
-      
-       
-     
-    }
-   
-    Orange .getItem = function (){
-     alert(item);
-    };
-   
-    return Orange;
-   
-   })();
-   
-  
-})();
-
-*/
-
-
-
-
 //Orange.msg module
 (function(window) {
 
@@ -37,7 +9,6 @@
             if (typeof msg === 'string') {
                 this.msg = msg;
 
-                this.hide();
             }
 
         };
@@ -48,11 +19,11 @@
             if (typeof id === 'string') {
 
                 var msgEle = document.getElementById(id);
-                const cssClass = 'msg-hidden';
-                msgEle.innerText = this.msg; /**  add msg to controller  */
+                const cssClass = 'o-msg-hidden';
+                msgEle.innerHTML = this.msg; /**  add msg to controller  */
 
                 if (msgEle.classList.contains(cssClass)) {
-                    msgEle.classList.remove("msg-hidden");
+                    msgEle.classList.remove("o-msg-hidden");
                     this.alertHerozinal(id);
                 } else {
                     //element is already view return alert 
@@ -63,19 +34,29 @@
             } else {
                 throw new('id invalid should path Element Id like string');
             }
-            this.alert(id);
+
             return this;
         };
 
         msg.prototype.hide = function(id) {
-            //this.alert(id);
-            // document.getElementById(id).classList.add("msg-hidden");
+            if (typeof id === 'string') {
+                /** define element message and hide it  */
+                if (typeof document.getElementById(id) === 'object') {
+                    document.getElementById(id).classList.add("o-msg-hidden");
+                } else {
+                    throw new 'cannot hide null ';
+                }
+            } else {
+                throw new 'error : not pass valid id'; // user should hide a correct message .
+            }
+
+
         };
 
         msg.prototype.alertHerozinal = function(id) {
 
             var elementForAlert = document.getElementById(id);
-            const alertCLass = "alertH";
+            const alertCLass = "o-msg-alertH";
 
             if (elementForAlert.classList.contains(alertCLass)) {
                 //elementForAlert.classList.remove(alertCLass);
@@ -90,7 +71,7 @@
 
         msg.prototype.alertVertical = function(id) {
             var elementForAlert = document.getElementById(id);
-            const alertClass = "alertV";
+            const alertClass = "o-msg-alertV";
 
             if (elementForAlert.classList.contains(alertClass)) {
                 var elmNew = elementForAlert.cloneNode(true);
