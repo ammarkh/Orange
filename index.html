@@ -67,7 +67,7 @@
     <div class="add-item" style="visibility: hidden;">
         Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""><br><br>
 
-        <button class="btn">Submit</button>
+        <button class="btn" onclick="op()">Submit</button>
         <button class="btn" onclick="addFormshide()">Cancel</button>
     </div>
     <br/><br/>
@@ -113,10 +113,27 @@
         console.log(window.model().showModel('mmsd'));
         */
         // Orange(btn1).checkParamType();
-        console.log(Orange(btn1).model().viewData());
+        console.log(Orange(btn1).model());
+
+        (function() {
+            if (document.readyState == "loading")
+                alert('loading');
+            if (document.readyState == "interactive") {
+                alert('d');
+            }
+            if (document.readyState == "complete")
+                console.log('page is ready');
+
+        })();
 
 
-        /*		Orange(id , class , tag)  . model ().amation
+
+
+
+        //loadState.open()
+
+
+        /*		Orange(id , class , tag)  . model ().anmation
         		
         	*/
     </script>

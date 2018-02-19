@@ -12,7 +12,7 @@
 
 /**this library will content text, div, button, model , responsive , navbar, check box, radio button, socity icon, alertMessage, box, background, validation, chart , form ,calender, hint , panel
  * 
- * table, auto complete , navbar
+ * table, auto complete , load , css, event 
  */
 
 /**

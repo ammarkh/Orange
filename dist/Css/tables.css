@@ -4,11 +4,11 @@
     width: 100%;
     height: auto;
     font-family: arial;
-    border: 1px solid lightgray;
+    border-spacing: 0px;
 }
 
 .tb thead th {
-    background-color: rgb(3, 155, 259);
+    background-color: gray;
     color: white;
     padding: 12px 0px 12px 0px;
 }
@@ -19,14 +19,19 @@
 }
 
 .tb .row:nth-child(odd) {
-    background-color: rgb(247, 249, 251);
+    /*background-color: rgb(247, 249, 251);*/
+    background: white;
+}
+
+.tb .row:nth-child(even) {
+    background-color: rgb(247, 247, 247);
 }
 
 .tb .row .col {
     font-family: verdana;
     font-size: 18px;
     text-align: center;
-    border-bottom: 1px solid rgb(3, 155, 259);
+    border-bottom: 1px solid lightgray;
     padding: 12px;
 }
 
