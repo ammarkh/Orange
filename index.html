@@ -8,6 +8,7 @@
     <title>Document</title>
     <script src="./dist/js/Orange.js"></script>
     <script src="./dist/js/model.js"></script>
+    <script src="./dist/js/validation.js"></script>
 
     <style type="text/css">
         .btn {
@@ -63,6 +64,7 @@
 		add New Item 
 	</button>
     <br/><br/>
+    <input type="text" name="" id="inp1" onchange="callFun()">
 
     <div class="add-item" style="visibility: hidden;">
         Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""> Name : <input type="text" name=""><br><br> Name : <input type="text" name=""><br><br>
@@ -114,7 +116,7 @@
         */
         // Orange(btn1).checkParamType();
         console.log(Orange(btn1).model());
-
+        /*
         (function() {
             if (document.readyState == "loading")
                 alert('loading');
@@ -125,17 +127,15 @@
                 console.log('page is ready');
 
         })();
+    */
 
 
+        console.log(('//').constructor == RegExp);
 
+        function callFun() {
 
-
-        //loadState.open()
-
-
-        /*		Orange(id , class , tag)  . model ().anmation
-        		
-        	*/
+            window.Validation('not valid user input ', 'inp1').pattren();
+        }
     </script>
 
 </body>

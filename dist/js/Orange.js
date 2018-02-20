@@ -24,7 +24,7 @@ function Orange  (message){
 
  */
 
-var Orange = function(el) {
+O = Orange = function(el) {
 
     function Orange(el) {
         this.el = el;
