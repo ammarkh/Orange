@@ -1,0 +1,97 @@
+/* tooltip style will be add here */
+
+.o-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.o-tooltip .o-tooltip-text {
+    visibility: hidden;
+    border: 1px solid gray;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4PX;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/*    for border nice top  -- Arrow */
+
+.o-tooltip-up::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+}
+
+
+/*down arrow*/
+
+.o-tooltip-down::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+}
+
+.o-tooltip:hover .o-tooltip-text {
+    visibility: visible;
+}
+
+.o-tooltip-left {
+    top: -5px;
+    right: 110%;
+    width: 60%;
+}
+
+.o-tooltip-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.7) transparent transparent;
+}
+
+.o-tooltip-up {
+    bottom: 80%;
+    left: 50%;
+}
+
+.o-tooltip-right {
+    left: 110%;
+    top: -5px;
+    width: 60%;
+}
+
+.o-tooltip-right::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.7) transparent transparent;
+}
+
+.o-tooltip-down {
+    top: 80%;
+    left: 50%;
+}
