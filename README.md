@@ -1,3 +1,3 @@
 # Orange
 library for design Beautiful web site 
-![alt text](http://url/to/img.png)
+![orange logo](https://github.com/ammarkh/Orange/blob/master/dist/Icons/if_fruit_orange_1898850.png)
