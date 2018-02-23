@@ -4,10 +4,12 @@
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
+    padding: 5px;
 }
 
 .o-tooltip .o-tooltip-text {
-    visibility: hidden;
+    /*visibility: hidden;*/
+    opacity: 0;
     border: 1px solid gray;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +18,12 @@
     border-radius: 4PX;
     position: absolute;
     z-index: 1;
+    font-size: 14px;
+    transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    min-width: 120px;
+    text-align: center;
 }
 
 
@@ -48,7 +56,11 @@
 }
 
 .o-tooltip:hover .o-tooltip-text {
-    visibility: visible;
+    /* visibility: visible;*/
+    opacity: 1;
+    transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
 }
 
 .o-tooltip-left {
@@ -58,19 +70,20 @@
 }
 
 .o-tooltip-left::after {
-    content: "";
+    content: " ";
     position: absolute;
     top: 50%;
-    right: 100%;
+    left: 100%;
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent rgba(0, 0, 0, 0.7) transparent transparent;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.7);
 }
 
 .o-tooltip-up {
     bottom: 80%;
-    left: 50%;
+    left: 30%;
+    width: 60%;
 }
 
 .o-tooltip-right {
@@ -93,5 +106,6 @@
 
 .o-tooltip-down {
     top: 80%;
-    left: 50%;
+    left: 30%;
+    width: 60%;
 }
