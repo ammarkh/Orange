@@ -24,11 +24,14 @@ function Orange  (message){
 
  */
 
-O = Orange = function(el) {
+O = Orange = function(el = '') {
 
     function Orange(el) {
         this.el = el;
     }
+
+    Orange.constructor = Orange;
+    Orange.__proto__ = Orange.prototype;
 
     //model function 
     Orange.prototype.model = function(el) {
@@ -43,6 +46,13 @@ O = Orange = function(el) {
         this.message = window.message(msg);
         return this.message;
     };
+
+    Orange.prototype.tooltip = function(message, el) {
+        var element = this.checkParamType(el);
+        this.tooltip = window.tooltip(message, element);
+        return this.tooltip;
+    };
+
 
     Orange.prototype.checkParamType = function() {
 
@@ -62,6 +72,7 @@ O = Orange = function(el) {
             return this.el;
         }
 
+        return Orange;
     };
 
     return new Orange(el);
