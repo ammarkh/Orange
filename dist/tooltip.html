@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./Css/tooltip.css">
-
-    <title>Document</title>
+    <script src="./js/tooltip.js"></script>
+    <title>tooltip</title>
 </head>
 
 <body>
@@ -23,10 +23,19 @@
         of code Trees are a really pleasant way of thinking of the world. Your memo at work has sections that have paragraphs? Tree. Your e-mail program contains messages that contain subject lines and addresses? Tree. Your favorite software program that
         has a menu bar with individual items that have subitems? Tree. Every day is Arbor Day in Codeville. Of course, it’s all a trick. If you cut open a computer, you’ll find countless little boxes in rows, places where you can put and retrieve bytes.
         Everything ultimately has to get down to things in little boxes pointing to each other. That’s just how things work. So that tree is actually more like this:
-        <div class='o-tooltip-text  o-tooltip-danger o-tooltip-right'>this text add by orange development team The reason I’m showing it to you is so you can see how every character matters. Computers usually “understand” things by going character by character, bit by bit, transforming the code into other kinds
+        <div class='o-tooltip-text  o-tooltip-danger o-tooltip-down'>this text add by orange development team The reason I’m showing it to you is so you can see how every character matters. Computers usually “understand” things by going character by character, bit by bit, transforming the code into other kinds
             of code as they go. The Bolus compiler now organizes the tokens into a little tree. Kind of like a sentence diagram.
         </div>
     </div>
+
+    <div id='als' class='o-tooltip'>
+        welcome to mee and see hello people ,
+    </div>
+
+
+    <script>
+        window.tooltip('message', document.getElementById('als')).on('down');
+    </script>
 </body>
 
 </html>
