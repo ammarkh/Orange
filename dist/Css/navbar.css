@@ -1,0 +1,82 @@
+.o-nav {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: rgba(30, 30, 30, 0.5);
+    position: relative;
+    left: 0px;
+    overflow: hidden;
+}
+
+.o-nav-radius {
+    border-radius: 4px;
+}
+
+.o-nav-static {
+    position: static;
+    top: 0px;
+}
+
+.o-nav ul,
+li {
+    list-style-type: none;
+}
+
+.o-nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 60px;
+    padding: 16px;
+    text-align: center;
+}
+
+.o-nav-link:hover {
+    background: rgba(130, 130, 130, 0.5)
+}
+
+.o-nav-brand {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.o-nav-link-right {
+    float: right;
+}
+
+
+/*basic style*/
+
+.o-nav-drk {
+    background: black;
+    color: white;
+}
+
+.o-nav-lgt {
+    background: rgb(80, 80, 80);
+}
+
+.o-nav-marry {
+    background: rgb(100, 80, 100);
+}
+
+.o-nav-curry {
+    background: rgb(80, 80, 200);
+}
+
+.o-nav-blue {
+    background: royalblue;
+}
+
+.o-nav-drkgold {
+    background: rgb(90, 80, 16);
+}
+
+
+/*Other style*/
+
+.nav-drp {}
