@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./Css/tooltip.css">
+    <script src="./js/Orange.js"></script>
     <script src="./js/tooltip.js"></script>
     <title>tooltip</title>
 </head>
@@ -34,7 +35,10 @@
 
 
     <script>
-        window.tooltip('message', document.getElementById('als')).on('down');
+        // window.tooltip('message', document.getElementById('als')).on('down');
+
+        // way for call orange tooltip is orange(id).tooltip('message').on(prop = 'left | right | up | down')
+        Orange(document.getElementById('als')).tooltip('message').on('left');
     </script>
 </body>
 

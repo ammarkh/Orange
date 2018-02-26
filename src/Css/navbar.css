@@ -77,6 +77,18 @@ li {
 }
 
 
+/*icons for navbar*/
+
+.o-nav-resp-icon {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    float: right;
+    padding: 8px 16px;
+    display: none;
+}
+
+
 /*Other style*/
 
 .nav-drp {}

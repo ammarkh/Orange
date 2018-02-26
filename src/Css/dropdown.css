@@ -1,0 +1,44 @@
+/* this style will contains a dropdown Orange Style*/
+
+
+/*this style for use drop down for any control*/
+
+.o-drp {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.o-drp-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+.o-drp-content.o-LinkVertical a {
+    display: block;
+    padding: 8px 16px;
+}
+
+.o-drp-content.o-LinkVertical a:hover {
+    background: rgba(100, 100, 100, 0.7);
+    color: white;
+}
+
+.o-drp-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.o-drp:hover .o-drp-content {
+    display: block;
+}
+
+
+/* drop down for navigation bar */

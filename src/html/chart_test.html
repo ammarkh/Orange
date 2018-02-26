@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chart Test</title>
+    <style>
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <canvas id='canvas1' width='400' height='400' style='border:2px solid gray;'></canvas>
+
+</body>
+<script>
+    /* function returnX_Y(ev) { console.log(ev.screenX + '||' + ev.screenY); } */
+
+    //window.onload = draw;
+    var say = 0;
+    var cat = 50;
+    var dog = 58;
+    var hors = 150;
+
+    var canvas = document.getElementById('canvas1')
+    var context = canvas.getContext('2d');
+
+    /* Pie chart
+    function draw() {
+
+
+        if (say >= 360) {
+            clearInterval(saydir);
+        }
+
+
+        // left rectangles, rotate from canvas origin
+        context.clearRect(0, 0, 10, 5);
+        if (say <= cat) {
+            context.fillStyle = 'red';
+
+        } else if (say >= cat && say <= hors) {
+            context.fillStyle = 'green';
+            context.innerHTML = 'dog';
+
+        } else {
+            context.fillStyle = 'yellow';
+
+
+        }
+        context.translate(200, 200);
+        context.rotate((Math.PI / 180));
+
+        context.translate(-200, -200);
+        context.fillRect(200, 200, 3, 120);
+        say += 1;
+
+    }
+
+    function seeres(obj) {
+        console.log(obj);
+    }
+
+
+    var saydir = setInterval(draw, 5);
+    */
+
+    context.beginPath();
+    moveTo(0, 0);
+    context.lineTo(10, 10);
+    context.lineTo(50, 20);
+    context.lineTo(80, 50);
+    context.closePath();
+    context.fill();
+</script>
+
+</html>

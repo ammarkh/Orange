@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Css/navbar.css">
+
+
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .o-nav-beauty {
+            padding: 8px 16px;
+            background: rgb(120, 120, 250);
+            color: white;
+        }
+        
+        .o-nav-beauty ul,
+        li {
+            list-style-type: none;
+        }
+        
+        .o-nav-beauty ul li {
+            display: inline-block;
+        }
+        
+        .o-nav-beauty ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px 16px;
+        }
+        
+        .o-nav-beauty ul li a:hover {
+            color: rgb(200, 200, 200);
+            border-bottom: 5px solid white;
+        }
+        
+        .o-nav-drp {
+            background: rgb(200, 200, 200);
+        }
+        
+        .o-nav-drp ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .o-nav-drp ul li {
+            display: inline-block;
+            padding: 16px 16px;
+        }
+        
+        .o-nav-drp ul li a,
+        .o-nav-drpbn {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        
+        .o-nav-drp ul li:hover {
+            background: tomato;
+        }
+        
+        .o-nav-drp ul li.drp {
+            display: inline-block;
+        }
+        
+        .o-nav-drp-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .o-nav-drp-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background: gray;
+        }
+        
+        .drp:hover .o-nav-drp-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class='o-nav-beauty'>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">products</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+    <nav class='o-nav-drp'>
+        <ul>
+            <li class='drp'>
+                <a href="javascript:void(0)" class='o-nav-drpbn'>Home</a>
+                <div class='o-nav-drp-content'>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">products</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

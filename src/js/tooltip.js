@@ -20,12 +20,16 @@
 
             if (arguments[1]) {
                 if (document || window.document) {
-                    if (typeof(arguments[1]) === 'string')
-                        tooltipContainer = document.getElementById(arguments[1]);
-                    else if (typeof(arguments[1] === 'object'))
-                        tooltipContainer = arguments[1];
-                    else
+                    if (typeof(arguments[1]) === 'string') {
+                        if (document.body.contains(document.getElementById(arguments[1])))
+                            tooltipContainer = document.getElementById(arguments[1]);
+                    } else if (typeof(arguments[1] === 'object')) {
+                        if (document.body.contains(arguments[1]))
+                            tooltipContainer = arguments[1];
+                    } else {
                         throw 'not valid element has passed ';
+                    }
+
                 }
             } else {
                 throw 'not element has passed for tooltip';

@@ -1,0 +1,53 @@
+/* this file for all responsive and size of control*/
+
+@media screen and (max-width: 465px) {
+    .bn {
+        width: 50%;
+        font-size: 14px !important;
+    }
+    .o-nav {
+        width: auto;
+    }
+    .o-nav .o-nav-link {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bn {
+        width: 100%;
+        font-size: 12px !important;
+        transition: font-size 0.2s;
+    }
+    .o-nav {
+        width: auto;
+    }
+    .o-nav .o-nav-link {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .bn {
+        font-size: 10px !important;
+        transition: font-size 0.2s;
+    }
+    .o-nav {
+        width: auto;
+    }
+    .o-nav .o-nav-link {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .o-nav-resp-icon {
+        display: block !important;
+    }
+    .o-nav a:not(:first-child) {
+        display: none;
+    }
+}
